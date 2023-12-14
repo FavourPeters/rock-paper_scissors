@@ -131,7 +131,7 @@ const App = () => {
   return (
     <div className="container">
       <section className="first-container">
-        <img src={Logo} alt="" srcset="" className="logo" />
+        <img src={Logo} alt="logo" srcset="" className="logo" />
         <ul className="score-board">
           <li
             style={{
@@ -200,7 +200,7 @@ const StepOne = () => {
               new Choices("Scissors").pick();
             }}
           >
-            <img src={Scissors} alt="paper" srcset="" width="130px" />
+            <img src={Scissors} alt="scissors" srcset="" width="130px" />
           </div>
         </section>
       </div>
@@ -210,7 +210,7 @@ const StepOne = () => {
           new Choices("Rock").pick();
         }}
       >
-        <img src={Rock} alt="paper" srcset="" width="130px" />
+        <img src={Rock} alt="rock" srcset="" width="130px" />
       </div>
     </div>
   );
@@ -238,7 +238,7 @@ const StepTwo = () => {
         >
           <div className="cols">
             <p className="picked">You Picked</p>
-            <img id="userPicked" width="130px" alt="paper" srcset="" />`
+            <img id="userPicked" width="130px" alt="yourSelection" srcset="" />`
           </div>
           <div className="cols">
             <p className="picked"></p>
@@ -272,11 +272,16 @@ const StepThree = () => {
         >
           <div className="cols">
             <p className="picked">You Picked</p>
-            <img id="userHand" width="130px" alt="paper" srcset="" />
+            <img id="userHand" width="130px" alt="yourSelection" srcset="" />
           </div>
           <div className="cols" style={{ margin: "0 0 0 35px" }}>
             <p className="picked">The House Picked</p>
-            <img id="ComputerPicked" width="130px" alt="paper" srcset="" />
+            <img
+              id="ComputerPicked"
+              width="130px"
+              alt="CPselection"
+              srcset=""
+            />
           </div>
         </section>
       </div>
