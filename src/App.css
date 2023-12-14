@@ -138,3 +138,8 @@
   font-size: 0.9rem;
   letter-spacing: 0.2rem;
 }
+img,
+.decision,
+.rules {
+  cursor: pointer;
+}
